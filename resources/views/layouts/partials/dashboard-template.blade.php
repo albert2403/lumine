@@ -49,7 +49,7 @@
                 </a>
                 <div id="collapseGuest" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ route('user.create_event') }}">Add Guest</a>
+                        <a class="collapse-item" href="{{ route('user.add_guests') }}">Add Guest</a>
                         <a class="collapse-item" href="{{ route('user.list_events') }}">List Guest</a>
                     </div>
                 </div>

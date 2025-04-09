@@ -31,4 +31,9 @@ class UserController extends Controller
     {
         return view("user.add_guests");
     }
+
+    public function listGuests()
+    {
+        return view("user.list_guests");
+    }
 }

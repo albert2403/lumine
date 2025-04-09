@@ -36,5 +36,9 @@ Route::prefix('dashboard')->group(function () {
         
         // Add Guest
         Route::get('/add_guests', [UserController::class, 'addGuests'])->name('add_guests');
+        Route::post('/store_guest', [UserController::class, 'storeGuest'])->name('store_guest');
+        
+        Route::get('/list_guests', [UserController::class, 'listGuests'])->name('list_guests');
+
     });
 });
