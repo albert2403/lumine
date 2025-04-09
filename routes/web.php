@@ -32,5 +32,9 @@ Route::prefix('dashboard')->group(function () {
         
         // List Event
         Route::get('/list_events', [UserController::class, 'listEvents'])->name('list_events');
+        Route::get('/edit_event', [UserController::class, 'editEvent'])->name('edit_event');
+        
+        // Add Guest
+        Route::get('/add_guests', [UserController::class, 'addGuests'])->name('add_guests');
     });
 });

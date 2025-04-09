@@ -5,7 +5,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('user.dashboard') }}">
                 <div class="sidebar-brand-text mx-3">Lumine</div>
             </a>
 
@@ -14,7 +14,7 @@
 
             <!-- Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('user.dashboard') }}">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Dashboard</span>
                 </a>
@@ -33,8 +33,8 @@
                 </a>
                 <div id="collapseEvents" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Create Event</a>
-                        <a class="collapse-item" href="#">List Events</a>
+                        <a class="collapse-item" href="{{ route('user.create_event') }}">Create Event</a>
+                        <a class="collapse-item" href="{{ route('user.list_events') }}">List Events</a>
                     </div>
                 </div>
             </li>
@@ -50,7 +50,7 @@
                 <div id="collapseGuest" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('user.create_event') }}">Add Guest</a>
-                        <a class="collapse-item" href="#">List Guest</a>
+                        <a class="collapse-item" href="{{ route('user.list_events') }}">List Guest</a>
                     </div>
                 </div>
             </li>

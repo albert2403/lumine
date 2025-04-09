@@ -21,4 +21,14 @@ class UserController extends Controller
     {
         return view("user.list_events");
     }
+
+    public function editEvent()
+    {
+        return view("user.edit_event");
+    }
+
+    public function addGuests()
+    {
+        return view("user.add_guests");
+    }
 }

@@ -5,62 +5,18 @@
   <div class="container">
     <div class="row justify-content-center align-items-start">
 
-    {{-- Card: List Events --}}
-    <div class="col-md-4 mb-4">
-      <div class="card rounded shadow-sm h-100 d-flex flex-column justify-content-between">
-      <div class="card-body">
-        <div class="mb-3 text-center">
-        <span class="badge bg-gradient-primary-to-secondary text-white d-inline-flex align-items-center px-2 py-1">
-          <i class="bi bi-calendar-week-fill me-1"></i> List Event
-        </span>
-        </div>
-
-        {{-- List Event Static --}}
-        <div class="table-responsive mb-3">
-        <table class="table table-sm table-borderless mb-0">
-          <thead class="text-muted">
-          <tr>
-            <th>Nama Event</th>
-            <th class="text-end">Tanggal</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>Resepsi Pernikahan</td>
-            <td class="text-end">12 Mei 2025</td>
-          </tr>
-          <tr>
-            <td>Acara Lamaran</td>
-            <td class="text-end">01 Mei 2025</td>
-          </tr>
-          <tr>
-            <td>Ulang Tahun</td>
-            <td class="text-end">25 April 2025</td>
-          </tr>
-          </tbody>
-        </table>
-        </div>
-      </div>
-
-      <div class="card-footer bg-white border-0 text-center">
-        <a href="{{ route('user.list_events') }}" class="btn btn-primary w-100">Lihat Detail</a>
-      </div>
-      </div>
-    </div>
-
-
-    {{-- Card: Form Create Event --}}
+    {{-- Card: Form Edit Event --}}
     <div class="col-md-8 mb-4">
       <div class="card rounded shadow-sm">
       <div class="card-body">
         <div class="p-4">
 
-        {{-- Judul: Create Event --}}
+        {{-- Judul: Edit Event --}}
         <div class="mb-3">
           <span
           class="badge bg-gradient-primary-to-secondary text-white d-inline-flex align-items-center px-2 py-1">
-          <i class="bi bi-calendar2-plus-fill me-1"></i>
-          <span class="fs-5 fw-bold">Create Event</span>
+          <i class="bi bi-pencil-square me-1"></i>
+          <span class="fs-5 fw-bold">Edit Event</span>
           </span>
         </div>
 
