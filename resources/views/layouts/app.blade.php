@@ -29,9 +29,9 @@
 <body>
    @include('layouts.partials.header')
 
-   <div class="container">
-       @yield('content')
-   </div>
+   
+    @yield('content')
+   
 
     @include('layouts.partials.footer')
 

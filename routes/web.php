@@ -19,6 +19,8 @@ Route::post('/login', [AuthController::class,'login'])->name('login.submit');
 
 Route::get('/register', [AuthController::class,'showRegis'])->name('register');
 Route::post('/register', [AuthController::class,'register'])->name('register.submit');
+Route::get('/profile', [AuthController::class,'profile'])->name('profile');
+
 
 Route::prefix('dashboard')->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
@@ -27,6 +29,7 @@ Route::prefix('dashboard')->group(function () {
     
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('dashboard');
+        Route::get('/payment', [UserController::class, 'payment'])->name('payment');
         
         // Create Event Process 
         Route::get('/create_event', [UserController::class, 'createEvent'])->name('create_event');

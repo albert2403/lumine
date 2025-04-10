@@ -3,6 +3,12 @@
 @section('content')
 
 <div class="container">
+  <div class="text-center my-4">
+    <h2 class="fw-bold text-center">
+      Selamat datang,
+      <span class="text-gradient">Albert!</span>
+    </h2>
+    
   <div class="row text-center justify-content-center">
 
     <!-- Card: Remaining Days -->
@@ -55,7 +61,7 @@
             <i class="bi bi-people-fill display-5 text-primary mb-2"></i>
             <p class="card-text">Orang</p>
           </div>
-          <a href="#" class="btn btn-primary mt-3">Lihat Detail</a>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalDetailPIC">Lihat Detail</a>
         </div>
       </div>
     </div>
@@ -111,6 +117,29 @@
 
 </div>
 
+</div>
+
+<!-- Modal Detail PIC -->
+<div class="modal fade" id="modalDetailPIC" tabindex="-1" aria-labelledby="modalDetailPICLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-header bg-gradient-primary-to-secondary text-white">
+        <h5 class="modal-title" id="modalDetailPICLabel">
+          <i class="bi bi-person-badge-fill me-2"></i> Detail Personal In Charge
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 border-bottom pb-2">
+          <p class="mb-1"><strong>Nama:</strong> Udin Setiawan</p>
+          <p class="mb-0"><strong>Nomor HP:</strong> 08123456789</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 @endsection

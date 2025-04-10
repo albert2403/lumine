@@ -12,6 +12,11 @@ class UserController extends Controller
         return view("user.dashboard");
     }
 
+    public function payment()
+    {
+        return view("user.status_payment");
+    }
+
     public function createEvent()
     {
         return view("user.create_event");

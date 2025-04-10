@@ -1,57 +1,60 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="row justify-content-center">
-
-    <div class="col-xl-10 col-lg-12 col-md-9">
-
-    <div class="card o-hidden border-0 shadow-lg my-5">
-      <div class="card-body p-0">
-      <!-- Nested Row within Card Body -->
-      <div class="row">
-        <div class="col-lg-6 d-none d-lg-block bg-login-image">
-        <img src="{{ asset('template/dashboard/img/undraw_posting_photo.svg') }}" class="img-fluid"
-          style="height:100%; object-fit:cover;" alt="Login">
-        </div>
-        <div class="col-lg-6">
-        <div class="p-5">
-          <div class="text-center">
-          <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
-          </div>
-          <form class="user">
-          <div class="form-group">
-            <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-            aria-describedby="emailHelp" placeholder="Enter Email Address...">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-            placeholder="Password">
-          </div>
-          <div class="form-group">
-            <div class="custom-control custom-checkbox small">
-            <input type="checkbox" class="custom-control-input" id="customCheck">
-            <label class="custom-control-label" for="customCheck">Remember
-              Me</label>
+<div class="bg-gradient-primary-to-secondary min-vh-100 d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-xl-10 col-lg-12 col-md-9">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="row g-0">
+            <!-- Gambar Kiri -->
+            <div class="col-lg-6 d-none d-lg-block bg-light">
+              <img src="{{ asset('template/dashboard/img/undraw_posting_photo.svg') }}" 
+                   alt="Login Image" 
+                   class="img-fluid h-100 w-100 object-fit-cover">
             </div>
-          </div>
-          <a href="index.html" class="btn btn-primary btn-user btn-block">
-            Login
-          </a>
-          </form>
-          <hr>
-          <div class="text-center">
-          <a class="small" href="forgot-password.html">Forgot Password?</a>
-          </div>
-          <div class="text-center">
-          <a class="small" href="register.html">Create an Account!</a>
-          </div>
-        </div>
-        </div>
-      </div>
+
+            <!-- Form Login -->
+            <div class="col-lg-6 bg-white">
+              <div class="p-5">
+                <div class="text-center mb-4">
+                  <h1 class="h4 text-gray-900 fw-bold">Welcome Back!</h1>
+                  <p class="text-muted small">Masuk untuk melanjutkan ke dashboard</p>
+                </div>
+
+                <form class="user">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                           placeholder="Masukkan email kamu...">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                           placeholder="Masukkan password...">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="customCheck">
+                    <label class="form-check-label small text-muted" for="customCheck">Ingat saya</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-user btn-block w-100">
+                    Login
+                  </button>
+                </form>
+
+                <hr class="my-4">
+                <div class="text-center">
+                  <a class="small" href="forgot-password.html">Lupa Password?</a>
+                </div>
+                <div class="text-center">
+                  <a class="small" href="register.html">Buat Akun Baru!</a>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /row -->
+        </div> <!-- /card -->
       </div>
     </div>
-
-    </div>
-
   </div>
+</div>
 @endsection
