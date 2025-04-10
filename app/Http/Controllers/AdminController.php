@@ -11,4 +11,14 @@ class AdminController extends Controller
     {
         return view("admin.dashboard");
     }
+
+    public function checkin()
+    {
+        return view("admin.checkin");
+    }
+
+    public function showQr()
+    {
+        return view("admin.show");
+    }
 }

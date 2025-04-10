@@ -36,4 +36,14 @@ class UserController extends Controller
     {
         return view("user.list_guests");
     }
+
+    public function addTable()
+    {
+        return view("user.add_table");
+    }
+
+    public function report()
+    {
+        return view("user.report");
+    }
 }

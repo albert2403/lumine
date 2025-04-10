@@ -22,6 +22,8 @@ Route::post('/register', [AuthController::class,'register'])->name('register.sub
 
 Route::prefix('dashboard')->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/checkin', [AdminController::class, 'checkin'])->name('admin.checkin');
+    Route::get('/admin/1', [AdminController::class, 'showQr'])->name('admin.validation');
     
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('dashboard');
@@ -39,6 +41,10 @@ Route::prefix('dashboard')->group(function () {
         Route::post('/store_guest', [UserController::class, 'storeGuest'])->name('store_guest');
         
         Route::get('/list_guests', [UserController::class, 'listGuests'])->name('list_guests');
+        Route::post('/edit_guests', [UserController::class, 'editGuests'])->name('edit_guests');
+        
+        Route::get('/add_table', [UserController::class, 'addTable'])->name('add_table');
+        Route::get('/report', [UserController::class, 'report'])->name('report');
 
     });
 });
