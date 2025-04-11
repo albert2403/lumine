@@ -50,7 +50,7 @@
                 <div id="collapseGuest" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('user.add_guests') }}">Add Guest</a>
-                        <a class="collapse-item" href="{{ route('user.list_events') }}">List Guest</a>
+                        <a class="collapse-item" href="{{ route('user.list_guests') }}">List Guest</a>
                     </div>
                 </div>
             </li>
@@ -65,15 +65,14 @@
                 </a>
                 <div id="collapseTable" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Add Table</a>
-                        <a class="collapse-item" href="#">List Table</a>
+                        <a class="collapse-item" href="{{ route('user.add_table') }}">Add Table</a>
                     </div>
                 </div>
             </li>
 
             <!-- Report -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('user.report') }}">
                     <i class="fas fa-fw fa-chart-bar"></i>
                     <span>Report</span>
                 </a>

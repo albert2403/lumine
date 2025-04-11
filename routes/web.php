@@ -30,6 +30,7 @@ Route::prefix('dashboard')->group(function () {
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('dashboard');
         Route::get('/payment', [UserController::class, 'payment'])->name('payment');
+        Route::get('/theme', [UserController::class, 'theme'])->name('theme');
         
         // Create Event Process 
         Route::get('/create_event', [UserController::class, 'createEvent'])->name('create_event');
